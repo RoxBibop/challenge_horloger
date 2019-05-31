@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<div class="gridtotalcontact">
+			<header class="entete">
+				<a href="accueil.html" class="logo"></a>
+				<nav class="menu">
+					<div class="bouton"><a href="accueil.html" class="liste">Accueil</a></div>
+					<div class="bouton"><a href="services.html" class="liste">Services</a></div>
+					<div class="bouton"><a href="apropos.html" class="liste">A propos</a></div>
+					<div class="bouton"><a href="galerie.html" class="liste">Galerie</a></div>
+					<div class="bouton"><a href="contact.html" class="liste">Contact</a></div>
+				
+				</nav>
+			</header>
+			<form action="action_page.php">
+				<div class="container">
+						
+					    <label for="nom">Nom</label>
+					    <input type="text" placeholder="Votre nom" name="nom" required class="texteform">
+
+					    <label for="prenom">Prénom</label>
+					    <input type="text" placeholder="Votre prenom" name="prenom" required class="texteform">
+
+					    <label for="email">E-mail</label>
+					    <input type="email" placeholder="Votre E-mail" name="E-mail" required class="texteform">
+
+					    <label for="tel">Téléphone (optionnel)</label>
+					    <input type="tel" placeholder="Votre numéro" name="telephone" class="texteform">
+
+					    <label for="message">Votre message</label>
+					    <textarea placeholder="Votre message ici" name="message" required class="msgform"></textarea>
+
+						<div class="envoyer">
+				    	<button type="submit" class="envoi">Envoyer</button>
+				    	</div>
+				</div>
+			</form>
+
+
+			<div class="ggleetxt">
+
+			<div class="googlemap">
+				<div class="googlecadre">
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=calais%20bdv%20lafayette&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+					</iframe>
+				</div>
+			</div>
+
+			<div class="infolivier">
+
+			<p>OLIVIER <br/>Horlogerie du Boulevard la Fayette 62000 CALAIS <br/> 07.48.59.32.50<br/> </p>
+			
+			</div>
+
+		</div>
+	</body>
+</html>
+
+

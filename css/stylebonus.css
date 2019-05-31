@@ -1,0 +1,135 @@
+@font-face
+{
+	font-family: montserrat1;
+	src: url('../font/montserrat/Montserrat-Regular.ttf');
+}
+
+@keyframes animbouton
+{
+	from {transform: translateY(0)}
+	to {transform: translateY(-0.7vh)}
+}
+
+
+body
+{
+	margin :  0;
+	padding: 0;
+	background-image: url('../images/oldclock.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.gridtotal
+{
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 12vh 1fr;
+	grid-template-columns: 20vw 1fr 20vw;
+}
+
+.entete
+{
+    background: linear-gradient(59deg, rgba(192,178,131,1) 6%, rgba(192,178,131,1) 46%, rgba(255,255,255,1) 57%, rgba(192,178,131,1) 68%, rgba(192,178,131,1) 100%);
+	color: white;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	grid-row-start: 1;
+	grid-row-end :  2;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	box-shadow:  -1px 1px 13px 2px #000;
+	z-index: 1;
+
+}
+
+.logo
+{
+	background-image: url('../images/logoretouche.png');
+	height: 11vh;
+	width: 18vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 2vw;
+}
+
+.menu
+{
+	margin-right: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+
+.liste, .liste:hover
+{
+	font-family: montserrat1;
+	text-decoration: none;
+	font-size: 2.5vh;
+	color: #373737;
+}
+
+
+.bouton
+{
+	margin-left: 3vmin;
+    margin-right: 3vmin;
+
+}
+
+.bouton:hover
+{
+	animation: animbouton 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+    text-decoration: underline;
+
+}
+
+.slidecentre
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	margin-top: 1vh;
+}
+
+.carousel .carousel-inner .item img
+{
+    height: 67vh;
+    width: 50vw;
+}
+
+.carousel
+{
+	height: 67vh;
+    width: 50vw;
+	box-shadow:  -1px 1px 13px 2px #000;
+	background-color: black;
+}
+
+
+
+.carousel-caption p, .carousel-caption h5
+{
+	font-family: montserrat1;
+}
+
+.carousel-caption h5
+{
+	font-size: 4.5vh;
+	font-weight: bold;
+}
+
+.carousel-caption p
+{
+	font-size: 2.5vh;
+}
+
